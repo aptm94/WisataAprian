@@ -214,6 +214,7 @@ public class Home extends AppCompatActivity implements SwipeRefreshLayout.OnRefr
             }
         });
 
+
         timerCek = new Timer();
         timerCek.schedule(new TimerTask() {
 
