@@ -205,6 +205,7 @@ public class Home extends AppCompatActivity implements SwipeRefreshLayout.OnRefr
         });
 
 
+
         rlLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
