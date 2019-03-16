@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SoalTestErporate</string>
+    <string name="SplashScreenVersion">Version</string>
+    <string name="wisata_yogyakarta">Wisata Yogyakarta</string>
+    <string name="hai">Hai</string>
+    <string name="penjelasan">Perkenalkan saya Aprian Tri Mulyana, Disini saya akan menjelaskan bahwa aplikasi ini dapat menentukan jarak karena sebelumnya saya melakukan convert alamat terlebih dahulu untuk dijadikan latitude longitude per 30 detik sekali di halaman list. Jadi jika sudah di convert ga akan di convert lagi karena data hasil convertnya di simpan di sqlite.</string>
+</resources>

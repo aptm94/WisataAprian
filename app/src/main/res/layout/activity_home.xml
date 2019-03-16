@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_redius_white">
+
+
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    app:srcCompat="@drawable/icon_search"
+                    android:tint="@color/grey2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/img_search"
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/wisata_yogyakarta"
+                    android:inputType="textPersonName"
+                    android:textColor="#000"
+                    android:textColorHint="@color/grey2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/rl_info"
+                android:layout_toLeftOf="@+id/rl_logout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/IVbucket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/icon_info"
+                    android:tint="#fff"
+                    tools:ignore="VectorDrawableCompat" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/rl_logout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/IVbucket2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/icon_logout"
+                    android:tint="#fff"
+                    tools:ignore="VectorDrawableCompat" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
